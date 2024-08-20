@@ -1,4 +1,7 @@
-<h2 align="center">Página: <a href=""></a><span>Aún no disponible</span></h2>
+![image](https://github.com/user-attachments/assets/22ffc4a7-9fcd-4f1d-85f4-514e41eef55c)
+
+
+<h2 align="center">Página: <a href="https://pablowib.github.io/ESTATICA-93-Perfumes-Shoping-Target-Blog/">Blog preguntas</a></h2>
 
 <h2 >Tecnologías usadas👨🏻‍💻</h2>
 <br>
