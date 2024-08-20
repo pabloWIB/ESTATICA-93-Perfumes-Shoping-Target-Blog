@@ -190,7 +190,6 @@ body .section-n3 {
   display: flex;
   flex-flow: column wrap;
   gap: 5rem;
-  margin-top: 1rem;
 }
 body .section-n3 > :nth-child(1) > :nth-child(1) {
   text-align: center;
@@ -292,28 +291,6 @@ body .section-n3 > :nth-child(1) > :nth-child(2) .add-info-get > :nth-child(2) {
 body .section-n3 > :nth-child(1) > :nth-child(2) .add-info-get > :nth-child(2) > :nth-child(1) p {
   color: black;
   transition: 0.6s;
-}
-body .section-n3 > :nth-child(1) > :nth-child(2) .add-info-get > :nth-child(2) .specialVideo {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-body .section-n3 > :nth-child(1) > :nth-child(2) .add-info-get > :nth-child(2) .specialVideo video {
-  width: min(90%, 300px);
-}
-body .section-n3 > :nth-child(1) > :nth-child(2) .add-info-get > :nth-child(2) .specialIMG {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  gap: 0.5rem;
-}
-body .section-n3 > :nth-child(1) > :nth-child(2) .add-info-get > :nth-child(2) .specialIMG div {
-  width: min(95%, 650px);
-}
-body .section-n3 > :nth-child(1) > :nth-child(2) .add-info-get > :nth-child(2) .specialIMG div img {
-  width: 100%;
 }
 
 @media (max-width: 800px) {
@@ -568,4 +545,29 @@ footer > :nth-child(1) > :nth-child(2) > :nth-child(2) p::selection {
     flex-flow: row wrap;
     justify-content: flex-end;
   }
+}
+.specialVideo {
+  width: 100%;
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+.specialVideo > :nth-child(1) {
+  width: min(85%, 400px);
+}
+.specialVideo > :nth-child(1) video {
+  width: 100%;
+}
+
+.specialIMG {
+  width: 100%;
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+.specialIMG > :nth-child(1) {
+  width: min(100%, 750px);
+}
+.specialIMG > :nth-child(1) img {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

@@ -204,7 +204,6 @@ body{
         display: flex;
         flex-flow: column wrap;
         gap: 5rem;
-        margin-top: 1rem;
         >:nth-child(1){
             >:nth-child(1){
                 text-align: center;
@@ -314,28 +313,6 @@ body{
                             p{
                                 color: black;
                                 transition: .6s;
-                            }
-                        }
-                        .specialVideo{
-                            display: flex;
-                            flex-flow: row wrap;
-                            align-items: center;
-                            justify-content: center;
-                            width: 100%;
-                            video{
-                                width: min(90%, 300px);
-                            }
-                        }
-                        .specialIMG{
-                            display: flex;
-                            flex-flow: column wrap;
-                            align-items: center;
-                            gap: .5rem;
-                            div{
-                                width: min(95%, 650px);
-                                img{
-                                    width: 100%;
-                                }
                             }
                         }
                     }
@@ -643,3 +620,29 @@ footer{
 }
 
 // FOOTER MEDIAS(1050px) TABLET / PHONE --- ---
+
+.specialVideo{
+    width: 100%;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    >:nth-child(1){
+        width: min(85%, 400px);
+        video{
+            width: 100%;
+        }
+    }
+}
+
+.specialIMG{
+    width: 100%;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    >:nth-child(1){
+        width: min(100%, 750px);
+        img{
+            width: 100%;
+        }
+    }
+}
