@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 .rubik {
@@ -63,7 +64,7 @@ header > :nth-child(1) > :nth-child(1) > :nth-child(2) {
 header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a {
   all: unset;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
@@ -84,6 +85,9 @@ header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a h2 {
   font-size: 20px;
   font-weight: 800x;
   color: white;
+}
+header > :nth-child(1) > :nth-child(1) > :nth-child(2) > :nth-child(2) {
+  padding: 0.85rem 0.5rem;
 }
 header > :nth-child(1) > :nth-child(1) > :nth-child(2) a:hover {
   transform: scale(1.05);
@@ -159,7 +163,6 @@ header > :nth-child(1) > :nth-child(1) > :nth-child(2) a:hover {
   header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a {
     all: unset;
     display: flex;
-    flex-flow: row wrap;
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
@@ -180,6 +183,9 @@ header > :nth-child(1) > :nth-child(1) > :nth-child(2) a:hover {
     font-size: 16px;
     font-weight: 800x;
     color: white;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(2) > :nth-child(2) {
+    padding: 0.5rem;
   }
   header > :nth-child(1) > :nth-child(1) > :nth-child(2) a:hover {
     transform: scale(1.05);
@@ -569,5 +575,40 @@ footer > :nth-child(1) > :nth-child(2) > :nth-child(2) p::selection {
   width: min(100%, 750px);
 }
 .specialIMG > :nth-child(1) img {
+  width: 100%;
+}
+
+.cortaInstroducción {
+  width: min(95%, 1250px);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+}
+.cortaInstroducción h2, .cortaInstroducción p {
+  color: rgb(6, 21, 43);
+}
+.cortaInstroducción h2 {
+  font-size: 2rem;
+}
+.cortaInstroducción p {
+  font-size: 1.5rem;
+}
+
+.spaceLogo {
+  width: min(95%, 1250px);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1.5rem;
+  margin: 0 auto;
+}
+.spaceLogo > :nth-child(1) {
+  width: min(95%, 120px);
+}
+.spaceLogo > :nth-child(1) img {
   width: 100%;
 }/*# sourceMappingURL=styles.css.map */

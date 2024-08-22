@@ -62,7 +62,7 @@ header{
                 >a{
                     all: unset;
                     display: flex;
-                    flex-flow: row wrap;
+                    flex-flow: row nowrap;
                     align-items: center;
                     gap: .5rem;
                     cursor: pointer;
@@ -83,6 +83,9 @@ header{
                         font-weight: 800x;
                         color: white;
                     }
+                }
+                >:nth-child(2){
+                    padding: .85rem .5rem;
                 }
                 a:hover{
                     transform: scale(1.05);
@@ -163,7 +166,7 @@ header{
                     >a{
                         all: unset;
                         display: flex;
-                        flex-flow: row wrap;
+                        // flex-flow: row wrap;
                         align-items: center;
                         gap: .5rem;
                         cursor: pointer;
@@ -184,6 +187,10 @@ header{
                             font-weight: 800x;
                             color: white;
                         }
+                    }
+                    >:nth-child(2){
+                        padding: .5rem;
+
                     }
                     a:hover{
                         transform: scale(1.05);
@@ -641,6 +648,41 @@ footer{
     align-items: center;
     >:nth-child(1){
         width: min(100%, 750px);
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.cortaInstroducción{
+    width: min(95%, 1250px);
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    gap: .5rem;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+    h2, p{
+        color: rgb(6, 21, 43);;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+.spaceLogo{
+    width: min(95%, 1250px);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1.5rem;
+    margin: 0 auto;
+    >:nth-child(1){
+        width: min(95%, 120px);
         img{
             width: 100%;
         }
